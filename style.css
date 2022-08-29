@@ -11,7 +11,8 @@ body{
 }
 #container{
     position: relative;
-    margin: auto;
+    /* top: 10; */
+    margin: auto; 
     height: 40vw;
     width: 40vw; 
     background: url(clock.png) no-repeat;
@@ -33,11 +34,13 @@ body{
 #container:before{
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
+    z-index: 100;
+    top: 48%;
+    width: 25px;
+    height: 25px;
     background: white;
     border-radius: 50%;
-    margin: 378px;
+    /* margin: 378px; */
 } 
 
 #hour{
@@ -79,5 +82,7 @@ body{
     line-height: 1.5;
     font-size: large;
     color: white;
-    margin: 0px 100px;
+    /* margin: 0px 100px; */
+    position: absolute;
+    bottom: 30% ;
 } 
